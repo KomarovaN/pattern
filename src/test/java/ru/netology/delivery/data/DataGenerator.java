@@ -19,7 +19,7 @@ public class DataGenerator {
 
     public static String generateCity() {
         // TODO: добавить логику для объявления переменной city и задания её значения, генерацию можно выполнить
-        String[] cities = new String[]{"Ижевск", "Йщшкар-Ола", "Казань", "Киров", "Нижний Новогород", "Оренбург",
+        String[] cities = new String[]{"Ижевск", "Йошкар-Ола", "Казань", "Киров", "Нижний Новогород", "Оренбург",
                 "Самара", "Саранск", "Саратов", "Ульяновск", "Уфа", "Чебоксары"};
         return cities[new Random().nextInt(cities.length)];
     }
