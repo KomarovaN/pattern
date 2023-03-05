@@ -17,6 +17,11 @@ import static com.codeborne.selenide.Selenide.open;
 
 class DeliveryTest {
 
+    @BeforeEach
+    void setup() {
+        open("http://localhost:7777");
+    }
+    
     @Test
     void shouldSubmitRequest() {
         DataGenerator.UserInfo validUser = DataGenerator.Registration.generateUser("ru");
